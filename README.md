@@ -181,7 +181,7 @@ Contributions and pull requests are welcome.  Please take note of the following 
 *  Any changes to the core should be tested against Vim 7.2.
 *  If you submit a theme, please create a screenshot so it can be added to the [Wiki][14].
 
-# License
+## License
 
 MIT License. Copyright (c) 2013-2015 Bailey Ling.
 
