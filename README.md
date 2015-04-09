@@ -4,10 +4,13 @@ Lean &amp; mean status/tabline for vim that's light as air.
 
 ![img](https://github.com/bling/vim-airline/wiki/screenshots/demo.gif)
 
-# Features
+## What has been Changed
+This is a fork version of [bling/vim-airline](https://github.com/bling/vim-airline/). I switched the insert-mode color and visual-mode color for tomorrow scheme, to make it more suitable for the [morhetz/gruvbox](https://github.com/morhetz/gruvbox) Vim color scheme.
+
+## Features
 
 *  Tiny core written with extensibility in mind ([open/closed principle][8]).
-*  Integrates with a variety of plugins, including: [vim-bufferline][6], [fugitive][4], [unite][9], [ctrlp][10], [minibufexpl][15], [gundo][16], [undotree][17], [nerdtree][18], [tagbar][19], [vim-gitgutter][29], [vim-signify][30], [syntastic][5], [eclim][34], [lawrencium][21], [virtualenv][31], [tmuxline][35].
+*  Integrates with a variety of plugins, including: [vim-bufferline][6], [fugitive][4], [unite][9], [ctrlp][10], [minibufexpl][15], [gundo][16], [undotree][17], [nerdtree][18], [tagbar][19], [vim-gitgutter][29], [vim-signify][30], [syntastic][5], [eclim][34], [lawrencium][21], [virtualenv][31], [tmuxline][35], [taboo.vim][37], [ctrlspace][38] and more.
 *  Looks good with regular fonts and provides configuration points so you can use unicode or powerline symbols.
 *  Optimized for speed; it loads in under a millisecond.
 *  Extensive suite of themes for popular color schemes including [solarized][23] (dark and light), [tomorrow][24] (all variants), [base16][32] (all variants), [molokai][25], [jellybeans][26] and others; have a look at the [screenshots][14] in the wiki.
@@ -98,7 +101,7 @@ Completely transform the statusline to your liking.  Build out the statusline as
 
 ![allyourbase](https://f.cloud.github.com/assets/306502/1022714/e150034a-0da7-11e3-94a5-ca9d58a297e8.png)
 
-# Rationale
+## Rationale
 
 There's already [powerline][2], why yet another statusline?
 
@@ -108,11 +111,11 @@ What about [vim-powerline][1]?
 
 *  vim-powerline has been deprecated in favor of the newer, unifying powerline, which is under active development; the new version is written in python at the core and exposes various bindings such that it can style statuslines not only in vim, but also tmux, bash, zsh, and others.
 
-# Where did the name come from?
+## Where did the name come from?
 
 I wrote the initial version on an airplane, and since it's light as air it turned out to be a good name.  Thanks for flying vim!
 
-# Installation
+## Installation
 
 This plugin follows the standard runtime path structure, and as such it can be installed with a variety of plugin managers:
 
@@ -128,38 +131,40 @@ This plugin follows the standard runtime path structure, and as such it can be i
 *  manual
   *  copy all of the files into your `~/.vim` directory
 
-# Configuration
+## Configuration
 
 `:help airline`
 
 The default setting of 'laststatus' is for the statusline to not appear until a split is created. If you want it to appear all the time, add the following to your vimrc:
 `set laststatus=2`
 
-# Integrating with powerline fonts
+## Integrating with powerline fonts
 
 For the nice looking powerline symbols to appear, you will need to install a patched font.  Instructions can be found in the official powerline [documentation][20].  Prepatched fonts can be found in the [powerline-fonts][3] repository.
 
 Finally, you can add the convenience variable `let g:airline_powerline_fonts = 1` to your vimrc which will automatically populate the `g:airline_symbols` dictionary with the powerline symbols.
 
-# FAQ
+## FAQ
 
 Solutions to common problems can be found in the [Wiki][27].
 
-# Performance
+## Performance
 
 Whoa!  Everything got slow all of a sudden...
 
 vim-airline strives to make it easy to use out of the box, which means that by default it will look for all compatible plugins that you have installed and enable the relevant extension.
 
-Many optimizations have been made such that the majority of users will not see any performance degradation, but it can still happen.  For example, users who routinely open very large files may want to disable the tagbar extension, as it can be very expensive to scan for the name of the current function.
+Many optimizations have been made such that the majority of users will not see any performance degradation, but it can still happen.  For example, users who routinely open very large files may want to disable the `tagbar` extension, as it can be very expensive to scan for the name of the current function.
 
 The [minivimrc][7] project has some helper mappings to troubleshoot performance related issues.
 
-# Screenshots
+If you don't want all the bells and whistles enabled by default, you can define a value for `g:airline_extensions`.  When this variable is defined, only the extensions listed will be loaded; an empty array would effectively disable all extensions.
+
+## Screenshots
 
 A full list of screenshots for various themes can be found in the [Wiki][14].
 
-# Bugs
+## Bugs
 
 Tracking down bugs can take a very long time due to different configurations, versions, and operating systems.  To ensure a timely response, please help me out by doing the following:
 
@@ -167,7 +172,7 @@ Tracking down bugs can take a very long time due to different configurations, ve
 *  A link to your vimrc or a gist which shows how you configured the plugin(s).
 *  And so I can reproduce; your `:version` of vim, and the commit of vim-airline you're using.
 
-# Contributions
+## Contributions
 
 Contributions and pull requests are welcome.  Please take note of the following guidelines:
 
@@ -176,7 +181,7 @@ Contributions and pull requests are welcome.  Please take note of the following 
 *  Any changes to the core should be tested against Vim 7.2.
 *  If you submit a theme, please create a screenshot so it can be added to the [Wiki][14].
 
-# License
+## License
 
 MIT License. Copyright (c) 2013-2015 Bailey Ling.
 
@@ -219,3 +224,5 @@ MIT License. Copyright (c) 2013-2015 Bailey Ling.
 [34]: http://eclim.org
 [35]: https://github.com/edkolev/tmuxline.vim
 [36]: https://github.com/edkolev/promptline.vim
+[37]: https://github.com/gcmt/taboo.vim
+[38]: https://github.com/szw/vim-ctrlspace
