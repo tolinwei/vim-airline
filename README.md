@@ -4,10 +4,10 @@ Lean &amp; mean status/tabline for vim that's light as air.
 
 ![img](https://github.com/bling/vim-airline/wiki/screenshots/demo.gif)
 
-# What has been Changed
+## What has been Changed
 This is a fork version of [bling/vim-airline](https://github.com/bling/vim-airline/). I switched the insert-mode color and visual-mode color for tomorrow scheme, to make it more suitable for the [morhetz/gruvbox](https://github.com/morhetz/gruvbox) Vim color scheme.
 
-# Features
+## Features
 
 *  Tiny core written with extensibility in mind ([open/closed principle][8]).
 *  Integrates with a variety of plugins, including: [vim-bufferline][6], [fugitive][4], [unite][9], [ctrlp][10], [minibufexpl][15], [gundo][16], [undotree][17], [nerdtree][18], [tagbar][19], [vim-gitgutter][29], [vim-signify][30], [syntastic][5], [eclim][34], [lawrencium][21], [virtualenv][31], [tmuxline][35], [taboo.vim][37], [ctrlspace][38] and more.
