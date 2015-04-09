@@ -101,7 +101,7 @@ Completely transform the statusline to your liking.  Build out the statusline as
 
 ![allyourbase](https://f.cloud.github.com/assets/306502/1022714/e150034a-0da7-11e3-94a5-ca9d58a297e8.png)
 
-# Rationale
+## Rationale
 
 There's already [powerline][2], why yet another statusline?
 
@@ -160,11 +160,11 @@ The [minivimrc][7] project has some helper mappings to troubleshoot performance 
 
 If you don't want all the bells and whistles enabled by default, you can define a value for `g:airline_extensions`.  When this variable is defined, only the extensions listed will be loaded; an empty array would effectively disable all extensions.
 
-# Screenshots
+## Screenshots
 
 A full list of screenshots for various themes can be found in the [Wiki][14].
 
-# Bugs
+## Bugs
 
 Tracking down bugs can take a very long time due to different configurations, versions, and operating systems.  To ensure a timely response, please help me out by doing the following:
 
