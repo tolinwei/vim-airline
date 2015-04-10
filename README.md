@@ -4,7 +4,7 @@ Lean &amp; mean status/tabline for vim that's light as air.
 
 ![img](https://github.com/bling/vim-airline/wiki/screenshots/demo.gif)
 
-## What has been Changed
+## What has been Changed （New）
 This is a fork version of [bling/vim-airline](https://github.com/bling/vim-airline/). I switched the insert-mode color and visual-mode color for tomorrow scheme, to make it more suitable for the [morhetz/gruvbox](https://github.com/morhetz/gruvbox) Vim color scheme.
 
 ## Features
